@@ -1,11 +1,11 @@
-#Simple Java WebSocket
-**This Java API provides both server and client side components:
+#Simple Java WebSocket<br>
+**This Java API provides both server and client side components:**
 <ul>
     <li>Server: everything in the javax.websocket.server package.</li>
     <li>Client: the content of javax.websocket package, which consists of client side APIs and also common libraries to both server and client.</li>
 </ul>
 
-**WebSocket endpoint lifecycle events are handled by the following annotations:
+**WebSocket endpoint lifecycle events are handled by the following annotations:**
 <ul>
     <li>@ServerEndpoint: If decorated with @ServerEndpoint, the container ensures availability of the class as a WebSocket server listening to a specific URI space</li>
     <li>@ClientEndpoint: A class decorated with this annotation is treated as a WebSocket client</li>
@@ -15,7 +15,7 @@
     <li>@OnClose: Used to decorate a Java method that is called by the container when the WebSocket connection closes</li>
 </ul>
 
-**The WebSocket specification supports two on-wire data formats – text and binary
+**The WebSocket specification supports two on-wire data formats – text and binary**
 <ul>
 <li>Text: Any textual data (java.lang.String, primitives or their equivalent wrapper classes)</li>
 <li>Binary: Binary data (e.g. audio, image etc.) represented by a java.nio.ByteBuffer or a byte[] (byte array)</li>
